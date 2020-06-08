@@ -280,17 +280,17 @@ Control de versiones y trabajo colaborativo con Git y GitHub:
 
 Diseño de experiencia de usuario (User Experience Design):
 
-* Ideación
-* Prototipado (sketching)
-* Testeo e Iteración
+* [Ideación](https://lms.laboratoria.la/cohorts/scl-2020-05-bc-core-scl014/courses/intro-ux/01-el-proceso-de-diseno/00-el-proceso-de-diseno)
+* [Prototipado (sketching)](https://lms.laboratoria.la/cohorts/scl-2020-05-bc-core-scl014/courses/intro-ux/01-el-proceso-de-diseno/00-el-proceso-de-diseno)
+* [Testeo e Iteración](https://lms.laboratoria.la/cohorts/scl-2020-05-bc-core-scl014/courses/intro-ux/01-el-proceso-de-diseno/00-el-proceso-de-diseno)
 
 Desarrollo Front-end:
 
-* [Valores](https://lms.laboratoria.la/cohorts/scl-2020-03-bc-core-scl013/courses/javascript/01-basics/01-values-variables-and-types)
-* [Tipos](https://lms.laboratoria.la/cohorts/scl-2020-03-bc-core-scl013/courses/javascript/01-basics/01-values-variables-and-types)
-* [Variables](https://lms.laboratoria.la/cohorts/scl-2020-03-bc-core-scl013/courses/javascript/01-basics/02-variables)
-* [Control de flujo](https://lms.laboratoria.la/cohorts/scl-2020-03-bc-core-scl013/courses/javascript/02-flow-control/00-opening)
-* [Tests unitarios](https://lms.laboratoria.la/cohorts/scl-2020-03-bc-core-scl013/courses/javascript/11-testing/00-opening)
+* [Valores](https://lms.laboratoria.la/cohorts/scl-2020-05-bc-core-scl014/courses/javascript/01-basics/01-values-variables-and-types)
+* [Tipos](https://lms.laboratoria.la/cohorts/scl-2020-05-bc-core-scl014/courses/javascript/01-basics/01-values-variables-and-types)
+* [Variables](https://lms.laboratoria.la/cohorts/scl-2020-05-bc-core-scl014/courses/javascript/01-basics/02-variables)
+* [Control de flujo](https://lms.laboratoria.la/cohorts/scl-2020-05-bc-core-scl014/courses/javascript/02-flow-control/00-opening)
+* [Tests unitarios](https://lms.laboratoria.la/cohorts/scl-2020-05-bc-core-scl014/courses/javascript/11-testing/00-opening)
 * [Aprende más sobre `charCodeAt()`](https://developer.mozilla.org/es/docs/Web/JavaScript/Referencia/Objetos_globales/String/charCodeAt)
 * [Aprende más sobre `String.fromCharCode()`](https://developer.mozilla.org/es/docs/Web/JavaScript/Referencia/Objetos_globales/String/fromCharCode)
 * [Aprende más sobre `ASCII`](http://conceptodefinicion.de/ascii/)
