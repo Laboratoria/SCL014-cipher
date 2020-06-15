@@ -1,0 +1,105 @@
+form {
+    margin: 0 auto;
+    width: 400px;
+    padding: 1em;
+    border: 1px solid #ccc;
+    border-radius: 1em;
+    background: linear-gradient(90deg,#e9daeb 10%,#72b6b0 90%)
+}
+body{
+background: #fd96fd;
+}
+
+.mostrar {
+    display: block;
+}
+  
+.ocultar {
+    display: none;
+}
+.barra {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 80px 0 80px;
+}
+
+p {
+    font-family: Arial Narrow;
+    color: Black;
+  }
+  
+  input {
+    font-family: Arial Narrow;
+    color: Black;
+  }
+
+@media (max-width: 640px) {
+    body {
+      background-color: #5fd7d7;
+    }
+    h1 {
+      font-family: brush Script MT;
+      font-size: 40px;
+      color: #414833;
+      text-align: center;
+    }
+    h2 {
+      font-family: Tahoma;
+      font-size: 14px;
+      color: white;
+      text-align: center;
+    }
+}
+  
+@media (max-width: 1024px) and (min-width: 640px) {
+    body {
+      background-color: #5fd7d7;
+    }
+    h1 {
+      font-family: brush Script MT;
+      font-size: 40px;
+      color: #414833;
+      text-align: center;
+    }
+    h2 {
+      font-family: Tahoma;
+      font-size: 16px;
+      color: white;
+      text-align: center;
+    }
+}
+  
+@media (min-width: 1024px) {
+    body {
+      background-color: #5fd7d7;
+    }
+    h1 {
+      font-family: brush Script MT;
+      font-size: 40px;
+      color: #414833;
+      text-align: center;
+    }
+    h2 {
+      font-family: Tahoma;
+      font-size: 18px;
+      color: white;
+      text-align: center;
+    }
+}
+#principal-container {
+    position: relative;
+}
+.boton {
+    background: #fdfd96;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    color: gray;
+    font-size: 16px;
+    transition-duration: 0.5s;
+    margin-top: 15px;
+}
+#instrucciones{
+    border-radius: 50%;
+}

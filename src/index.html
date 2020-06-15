@@ -7,7 +7,103 @@
   </head>
   <body>
     <div id="root">
-      <h1>Hello world!</h1>
+      <div>
+        <!-- pantalla de bienvenida -->
+        <form>
+          <h1>Bienvenido a Orange lemón </h1>
+          <div class="userName">
+              <label for="name"> ¿Cúal es tu nombre? </label><br></br>
+              <input type="text" id="userName" placeholder="Escribe tu nombre" name="nombre" required />
+            </div>
+            <br>
+
+            <div class="userPhone">
+              <label for="phone"> ¿ingresa tú número de celular? </label><br></br>
+              <input type="text" id="userPhone" placeholder="ingresa tu numero" name="numero" required />
+            </div>
+            <br>
+            <button id="subir">Comenzar</button>
+          </form>
+      </div>
+      <!--pantalla de contactos -->
+      <div>
+        <form>
+            <h1>contactos</h1>
+            <input type="text" id="nameAdd" placeholder="Nombre" name="friendsAdd" required />
+            <br>
+            <input type="text" id="phoneAdd" placeholder="Número" name="numberAdd" required />
+            <br>
+            <button id="subir">Añadir</button>
+            
+        </form>
+    </div>
+
+
+    <!--pantalla de añadir contacto-->
+    <div>
+        <form>
+            <h1>Añadir contacto</h1>
+        </form>
+    </div>
+
+
+    <!--pantalla de instrucciones-->
+    <div>
+        <form>
+            <h1>Instrucciones</h1>
+            <div class="instrucciones">
+              <p>Cifrar: con ello ciframos nuestro código. </p>
+              <p>Decifrar : muestra el texto original del mensaje. </p>
+            </div>
+        </form>
+    </div>
+
+
+    <!--pantalla de offset a modificar-->
+    <div>
+        <form>
+            <h1>Modifica el N°</h1>
+            <button>n°2</button>
+            <button>n°4</button>
+            <button>n°6</button>
+            <button>n°8</button>
+            <button>n°10</button>
+            <button id="subir">Comenzar</button>
+
+        </form>
+    </div>
+
+    
+    <!--pantalla de encode y decode-->
+    <div>
+        <form>
+            <h1>Code & decode</h1>
+            <div class="userCode">
+              <label for="codeIn"> Mensaje a Codificar </label><br></br>
+              <input type="text" id="userCode" placeholder="Aquí se mostrara el mensaje a codificar" name="code" required />
+            </div>
+            <br>
+            <button id="subir">Codificar</button><button id="subir">Decodificar</button>
+            <div class="userDecode">
+              <label for="decode"> Mensaje Decodificado </label><br></br>
+              <input type="text" id="userDeco" placeholder="Aquí se mostrara el mensaje decodificado" name="deco" required />
+            </div>
+            <br>
+            <button id="subir">Copiar</button>
+
+        </form>
+    </div>
+    
+    <aside class="social-sharing">
+        <ul class="menu-social">
+            <li class="social-item"><a href="http://twitter.com/intent/tweet?text=SiloCreativo&url=https://www.silocreativo.com/en/" target="_blank"><span class="screen-reader-text">Twitter</span></a></li>
+            <li class="social-item"><a href="http://www.facebook.com/sharer.php?u=https://www.silocreativo.com/en/&t=SiloCreativo" target="_blank"><span class="screen-reader-text">Facebook</span></a></li>
+            <li class="social-item"><a href="https://www.pinterest.com/pin/find/?url=https://www.silocreativo.com/en/" target="_blank"><span class="screen-reader-text">Pinterest</span></a></li>
+            <li class="social-item"><a href="whatsapp://send?text=https://www.silocreativo.com/en/" data-action="share/whatsapp/share"><span class="screen-reader-text">Whatsapp</span></a></li>
+            
+        </ul>
+    </aside><!-- .social-sharing -->
+
     </div>
     <script src="index.js" type="module"></script>
   </body>
