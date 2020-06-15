@@ -6,100 +6,166 @@ form {
     border-radius: 1em;
     background: linear-gradient(90deg,#e9daeb 10%,#72b6b0 90%)
 }
-body{
-background: #fd96fd;
+body {
+  background: rgb(36, 36, 36);  
+} 
+
+h1 {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  color: #404281;
 }
 
-.mostrar {
-    display: block;
-}
-  
-.ocultar {
-    display: none;
-}
-.barra {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 0 80px 0 80px;
+h2 {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  color: #404281;
 }
 
-p {
-    font-family: Arial Narrow;
-    color: Black;
-  }
-  
-  input {
-    font-family: Arial Narrow;
-    color: Black;
-  }
+.welcomeTo {
+  text-align: center;
+  width: 22em;
+  height: 36em;
+  border-radius: 7%;
+  margin-top: 1em;
+  margin-bottom: 8em;
+  margin-right: 30em;
+  margin-left: 30em;
+  /*background-color: #D4CED1;*/
+  background: linear-gradient(to bottom, rgb(53, 29, 48) 0%, rgb(241, 92, 216) 43%, rgb(246, 12, 207) 51%, rgb(240, 23, 193) 71%, rgb(240, 59, 165) 100%);
+}
 
-@media (max-width: 640px) {
-    body {
-      background-color: #5fd7d7;
-    }
-    h1 {
-      font-family: brush Script MT;
-      font-size: 40px;
-      color: #414833;
-      text-align: center;
-    }
-    h2 {
-      font-family: Tahoma;
-      font-size: 14px;
-      color: white;
-      text-align: center;
-    }
+.whiteLetter {
+  font-family: "Roboto", sans-serif;
+  color: #FFFFFF;
+  font-style: normal;
+  font-size: 1.5em;
 }
-  
-@media (max-width: 1024px) and (min-width: 640px) {
-    body {
-      background-color: #5fd7d7;
-    }
-    h1 {
-      font-family: brush Script MT;
-      font-size: 40px;
-      color: #414833;
-      text-align: center;
-    }
-    h2 {
-      font-family: Tahoma;
-      font-size: 16px;
-      color: white;
-      text-align: center;
-    }
+
+.grayLetter {
+  font-family: "Roboto", sans-serif;
+  color: rgb(99, 96, 96);
+  font-style: normal;
+  font-size: 1.3em;
+} 
+
+.textContainer {
+  position: center;
+  width: 15em;
+  height: 2.5em;
+  background: #FFFDFD;
+  border-radius: 20px;
+  margin: 1em;
+  border: none; 
+  text-align: center;
+  font-size: medium; 
+  font-style: italic;  
 }
-  
-@media (min-width: 1024px) {
-    body {
-      background-color: #5fd7d7;
-    }
-    h1 {
-      font-family: brush Script MT;
-      font-size: 40px;
-      color: #414833;
-      text-align: center;
-    }
-    h2 {
-      font-family: Tahoma;
-      font-size: 18px;
-      color: white;
-      text-align: center;
-    }
+
+.enterBtn {
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  text-align: center;
+  font-size: 1em;
+  line-height: 0.2em;
+  margin: 3em;
+  padding: 1em;
+  width: 8em;
+  height: 2.5em;
+  background: #FAC43B;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
 }
-#principal-container {
-    position: relative;
+
+.listoBtn {
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  text-align: center;
+  font-size: 1em;
+  line-height: 0.2em;
+  margin: 3em;
+  padding: 1em;
+  width: 5em;
+  height: 2.5em;
+  background: #FAC43B;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
 }
-.boton {
-    background: #fdfd96;
-    border: none;
-    border-radius: 5px;
-    padding: 10px;
-    color: gray;
-    font-size: 16px;
-    transition-duration: 0.5s;
-    margin-top: 15px;
+
+.hideMe {
+  display: none;
 }
-#instrucciones{
-    border-radius: 50%;
+
+.contactContainer {
+  position: center;
+  width: 15em;
+  height: 2.5em;
+  background: #B3C5C7;
+  border-radius: 5px;
+  margin: 1em;
+  border: none;
+  text-align: center;
+  font-size: medium; 
+  font-style: italic; 
+}
+
+.newContact {
+text-align: center;
+width: 22em;
+height: 36em;
+border-radius: 7%;
+margin-top: 1em;
+margin-bottom: 8em;
+margin-right: 30em;
+margin-left: 30em;
+background-color: #D4CED1;
+}
+
+.saveContact{
+  position: center;
+  width: 10em;
+  height: 2.5em; 
+  background: #FBEDD7;
+  margin-top: 4em;
+  margin-bottom: 5em;
+  margin-right: 10em;
+  margin-left: 7em;
+  border: none;
+  text-align: center;
+  font-size: medium;
+}
+
+.addBtn {
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  text-align: center;
+  font-size: 1em;
+  line-height: 0.2em;
+  margin: 1em;
+  padding: 1em;
+  width: 5em;
+  height: 2.5em;
+  background: #FAC43B;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+.neeeext{
+  margin-top: 5em;
+}
+
+.offsetForm {
+  font-family: "Roboto", sans-serif;
+  background-color: #FAC43B;
+}
+
+.smallLetter {
+  font-family: "Roboto", sans-serif;
+  font-size: smaller;
+  color: rgb(99, 96, 96);
 }

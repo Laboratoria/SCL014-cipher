@@ -1,110 +1,70 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>Caesar Cipher</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <div id="root">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bienvenido a Naranja</title>
+    <link href="style.css" rel="stylesheet" type="text/css"/>
+</head>
+
+<body>
+<!--Primera pantalla / Bienvenida-->    
+  <div class="welcomeTo" id="firstScreen"> 
+      <h1>Naranja</h1>
+        <br>
+        <label for="userName" class="whiteLetter">Ingresa tu nombre</label><br>
+        <input type="text" class="textContainer" id="userName" name="userName" placeholder="Canelita"><br>
+        <br>
+        <label for="userTelephone" class="whiteLetter">Número de teléfono</label><br>
+        <input type="text" class="textContainer" id="userTelephone" name="userTelephone" placeholder="+569 11223344"><br>    
+            <button type="button" class="enterBtn" id="buttonEnter">Entrar</button>
+  </div>   
+  
+<!--Segunda pantalla /mensajes cifrados -->
+  <div class="hideMe" id="secondScreen"> 
+      <br>
+      <h1>Esta sería la pantalla de los mensajes cifrados</h1>
       <div>
-        <!-- pantalla de bienvenida -->
-        <form>
-          <h1>Bienvenido a Orange lemón </h1>
-          <div class="userName">
-              <label for="name"> ¿Cúal es tu nombre? </label><br></br>
-              <input type="text" id="userName" placeholder="Escribe tu nombre" name="nombre" required />
-            </div>
+            <br> 
+            <label for="offset" class="smallLetter">Elige el número de desplazamiento</label>
+                <input list="offsets" name="offset" id="offset">
+                 <datalist id="offsets">
+                        <option value="2">
+                        <option value="3">
+                        <option value="4">
+                        <option value="5">
+                        <option value="6">
+                    </datalist>
+                <input type="submit" class="offsetForm" value="OK">
+            <br>       
+            <button type="button" class="neeeext" id="buttonNext">Enviar</button>
             <br>
+        </div>
+ </div>    
 
-            <div class="userPhone">
-              <label for="phone"> ¿ingresa tú número de celular? </label><br></br>
-              <input type="text" id="userPhone" placeholder="ingresa tu numero" name="numero" required />
-            </div>
-            <br>
-            <button id="subir">Comenzar</button>
-          </form>
-      </div>
-      <!--pantalla de contactos -->
-      <div>
-        <form>
-            <h1>contactos</h1>
-            <input type="text" id="nameAdd" placeholder="Nombre" name="friendsAdd" required />
-            <br>
-            <input type="text" id="phoneAdd" placeholder="Número" name="numberAdd" required />
-            <br>
-            <button id="subir">Añadir</button>
-            
-        </form>
-    </div>
+<!--Tercera pantalla / Añadir contacto para enviar mensaje--> 
+ <div class="hideMe" id="newcontactScreen"> 
+    <br>
+    <h2>Agregar nuevo contacto</h2>
+    <br>
+    <label for="contactName" id="firstContact" class="grayLetter">Nombre</label><br>
+    <input type="text" class="contactContainer" id="contactName" name="contactName" placeholder="María Pérez"><br>
+    <br>
+    <label for="contactPhone" class="grayLetter">Teléfono</label><br>
+    <input type="text" class="contactContainer" id="contactPhone" name="contactPhone" placeholder="+569 55778899"><br>
+    <button type="button" class="listoBtn" id="buttonListo">Listo</button>
+</div>
 
+<!--Cuarta pantalla / Contactos guardados -->
+<div class="hideMe" id="contactScreen">
+    <br>
+    <h3 id="allContacts">Hola</h3>
+    <div class="saveContact" id="ContactOne">Contacto</div>
+    <div class="saveContact" id="ContactTwo"> </div>
+    <br>
+    <button type="button" class="addBtn" id="buttonadd">Añadir</button>
+</div>
 
-    <!--pantalla de añadir contacto-->
-    <div>
-        <form>
-            <h1>Añadir contacto</h1>
-        </form>
-    </div>
-
-
-    <!--pantalla de instrucciones-->
-    <div>
-        <form>
-            <h1>Instrucciones</h1>
-            <div class="instrucciones">
-              <p>Cifrar: con ello ciframos nuestro código. </p>
-              <p>Decifrar : muestra el texto original del mensaje. </p>
-            </div>
-        </form>
-    </div>
-
-
-    <!--pantalla de offset a modificar-->
-    <div>
-        <form>
-            <h1>Modifica el N°</h1>
-            <button>n°2</button>
-            <button>n°4</button>
-            <button>n°6</button>
-            <button>n°8</button>
-            <button>n°10</button>
-            <button id="subir">Comenzar</button>
-
-        </form>
-    </div>
-
-    
-    <!--pantalla de encode y decode-->
-    <div>
-        <form>
-            <h1>Code & decode</h1>
-            <div class="userCode">
-              <label for="codeIn"> Mensaje a Codificar </label><br></br>
-              <input type="text" id="userCode" placeholder="Aquí se mostrara el mensaje a codificar" name="code" required />
-            </div>
-            <br>
-            <button id="subir">Codificar</button><button id="subir">Decodificar</button>
-            <div class="userDecode">
-              <label for="decode"> Mensaje Decodificado </label><br></br>
-              <input type="text" id="userDeco" placeholder="Aquí se mostrara el mensaje decodificado" name="deco" required />
-            </div>
-            <br>
-            <button id="subir">Copiar</button>
-            <p>hola</p>
-        </form>
-    </div>
-    
-    <aside class="social-sharing">
-        <ul class="menu-social">
-            <li class="social-item"><a href="http://twitter.com/intent/tweet?text=SiloCreativo&url=https://www.silocreativo.com/en/" target="_blank"><span class="screen-reader-text">Twitter</span></a></li>
-            <li class="social-item"><a href="http://www.facebook.com/sharer.php?u=https://www.silocreativo.com/en/&t=SiloCreativo" target="_blank"><span class="screen-reader-text">Facebook</span></a></li>
-            <li class="social-item"><a href="https://www.pinterest.com/pin/find/?url=https://www.silocreativo.com/en/" target="_blank"><span class="screen-reader-text">Pinterest</span></a></li>
-            <li class="social-item"><a href="whatsapp://send?text=https://www.silocreativo.com/en/" data-action="share/whatsapp/share"><span class="screen-reader-text">Whatsapp</span></a></li>
-            
-        </ul>
-    </aside><!-- .social-sharing -->
-
-    </div>
-    <script src="index.js" type="module"></script>
-  </body>
+</body>
+<script type="text/javascript" src="script.js"></script>
 </html>
