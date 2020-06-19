@@ -1,0 +1,816 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0px;
+}
+
+
+/*/Menu/*/
+
+.menu {
+    background-color: #BFDCE5;
+    height: 5em;
+    width: 100%;
+    position: fixed;
+}
+
+.logomenu {
+    width: 10em;
+    margin-left: 2em;
+    padding-top: 1em;
+}
+
+.textomenu1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    margin-left: 72%;
+    margin-top: -35px;
+}
+
+.textomenu1 a {
+    text-decoration: none;
+    color: #39A2BA;
+}
+
+.textomenu1 a:hover {
+    color: #027184;
+}
+
+.textomenu2 {
+    color: #39A2BA;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    margin-left: 85%;
+    margin-top: -18px;
+    text-decoration: none;
+}
+
+.textomenu2 a {
+    text-decoration: none;
+    color: #39A2BA;
+}
+
+.textomenu2 a:hover {
+    color: #027184;
+}
+
+
+/*/Header/*/
+
+.header {
+    background-color: #AED1D1;
+    width: 100%;
+    padding-bottom: 10%;
+    padding-top: 50px;
+}
+
+.rectangulo {
+    background-color: #5E67A6;
+    width: 30em;
+    height: 10em;
+    border-radius: 1em;
+    margin-left: 8em;
+    margin-top: -2em;
+}
+
+.rectangulo h3 {
+    color: #ffffff;
+    font-size: 13pt;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 1em;
+    text-align: center;
+    padding-top: 2em;
+}
+
+#btn {
+    background-color: #D17B77;
+    border-radius: 1em;
+    margin-left: 25em;
+    width: 15em;
+    height: 4em;
+    margin-left: 20em;
+}
+
+#btn:hover {
+    background-color: #CE5252;
+}
+
+#btn a {
+    text-align: center;
+    font-size: 13pt;
+    color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+}
+
+.logoJetaime {
+    width: 485px;
+    margin-left: 8em;
+    margin-top: 5em;
+    margin-bottom: 6em;
+}
+
+.logoJetaime:hover {
+    width: 490px;
+    -webkit-transform: scale(1.3);
+    transform: scale(1.1);
+}
+
+.imagenPareja {
+    float: right;
+    margin-right: 8%;
+    width: 40%;
+    padding-top: 5%;
+}
+
+@media screen and (max-width: 1295px) {
+    .imagenPareja {
+        display: none;
+    }
+}
+
+
+/*/Articule/*/
+
+.articule {
+    background-color: #CCCAE3;
+    width: 100%;
+    padding-bottom: 5%;
+    padding-top: 50px;
+}
+
+.articule h2 {
+    color: #6466A4;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    margin-left: 3em;
+    margin-right: 3em;
+    margin-top: 2em;
+    margin-bottom: 1em;
+}
+
+#btnEmpieza {
+    background-color: #D17B77;
+    border-radius: 1em;
+    margin-left: 25em;
+    width: 15em;
+    height: 4em;
+    margin-left: 45%;
+}
+
+#btnEmpieza:hover {
+    background-color: #CE5252;
+}
+
+#btnEmpieza a {
+    text-align: center;
+    font-size: 13pt;
+    color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+}
+
+.btnEmpieza a:hover {
+    background-color: #6466A4;
+}
+
+
+/*/Contenido/*/
+
+.contenido {
+    background-color: #D17B77;
+    width: 100%;
+    height: 48em;
+}
+
+.celularImg {
+    width: 24em;
+    margin-left: 12em;
+    margin-top: 3em;
+}
+
+.contenedorCodigo {
+    position: relative;
+    display: inline-block;
+    text-align: center;
+}
+
+
+/*/Escribe tu texto para cifrar/*/
+
+.mensajeSecreto h3 {
+    color: #6466A4;
+    font-family: Arial, Helvetica, sans-serif;
+    position: absolute;
+    top: 20%;
+    left: 40%;
+}
+
+.textoCifrar input {
+    position: absolute;
+    margin-top: 2%;
+    top: 26%;
+    left: 40%;
+    border-radius: 20px;
+    width: 49%;
+    height: 4%;
+}
+
+
+/*/Ingresa número de desplazamientos/*/
+
+.desplazamientos h3 {
+    color: #6466A4;
+    font-family: Arial, Helvetica, sans-serif;
+    position: absolute;
+    top: 32%;
+    left: 40%;
+}
+
+.numeroDesplazamiento input {
+    position: absolute;
+    margin-top: 2%;
+    top: 38%;
+    left: 40%;
+    border-radius: 20px;
+    width: 49%;
+    height: 4%;
+}
+
+
+/*Boton de CIFRAR*/
+
+#btnCifrar {
+    position: absolute;
+    background-color: #D17B77;
+    border-radius: 1em;
+    top: 47%;
+    left: 69%;
+    width: 9em;
+    height: 3em;
+    color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#btnCifrar:hover {
+    background-color: #CE5252;
+}
+
+
+/*Este es tu Decifrar:*/
+
+.textoDecifrar h3 {
+    color: #6466A4;
+    font-family: Arial, Helvetica, sans-serif;
+    position: absolute;
+    top: 54%;
+    left: 40%;
+}
+
+.textoDecifrar input {
+    position: absolute;
+    margin-top: 2%;
+    top: 60%;
+    left: 40%;
+    border-radius: 20px;
+    width: 49%;
+    height: 4%;
+}
+
+.datos {
+    position: absolute;
+}
+
+
+/*Boton de DECIFRAR*/
+
+#btnDecifrar {
+    position: absolute;
+    background-color: #D17B77;
+    border-radius: 1em;
+    top: 69%;
+    left: 69%;
+    width: 9em;
+    height: 3em;
+    color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#btnDecifrar:hover {
+    background-color: #CE5252;
+}
+
+
+/*Mensaje Cifrado o Decifrado*/
+
+.resultado {
+    color: #6466A4;
+    font-family: Arial, Helvetica, sans-serif;
+    position: absolute;
+    top: 74%;
+    left: 40%;
+}
+
+#mensajeTraducido {
+    color: #39A2BA;
+    font-family: Arial, Helvetica, sans-serif;
+    position: absolute;
+    font-size: 20pt;
+    font-weight: bold;
+    top: 77%;
+    left: 40%;
+}
+
+
+/*Comunicado*/
+
+.comunicado h3 {
+    color: #F9CFD3;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 52%;
+    margin-right: 15%;
+    margin-top: -580px;
+}
+
+
+/*/ingresa correo de tu enamorade/*/
+
+.ingresaCorreo h3 {
+    color: #F9CFD3;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 3%;
+    margin-left: 52%;
+}
+
+.destinatario input {
+    margin-left: 52%;
+    border-radius: 20px;
+    width: 28%;
+    height: 40px;
+}
+
+
+/*ingresa mensaje*/
+
+.ingresaMensaje {
+    margin-left: 52%;
+}
+
+.ingresaMensaje h3 {
+    color: #F9CFD3;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 60px;
+}
+
+.send {
+    margin-top: 3%;
+}
+
+.linkSend {
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 71%;
+    background-color: #6466A4;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 10px;
+    padding-top: 20px;
+    padding-left: 55px;
+    padding-right: 60px;
+    padding-bottom: 20px;
+    font-size: 13pt;
+    font-weight: bold;
+}
+
+.linkSend:hover {
+    background-color: #4C4F7A;
+}
+
+
+/*Footer*/
+
+.footer {
+    background-color: #E2B2B6;
+    width: 100%;
+    height: 100px;
+    padding-top: 3%;
+}
+
+.footer h4 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #ffffff;
+    margin-left: 40%;
+}
+
+.instagram img {
+    width: 3em;
+    margin-top: -100px;
+    margin-bottom: 20px;
+    margin-left: 85%;
+}
+
+.facebook img {
+    width: 3em;
+    margin-top: -100px;
+    margin-bottom: 40px;
+    margin-left: 90%;
+}
+
+
+/*/Responsive/*/
+
+@media only screen and (max-width: 992px) {
+    /* For PC: */
+    .textomenu1 {
+        margin-left: 52%;
+    }
+    .textomenu2 {
+        margin-left: 75%;
+    }
+    .contenido {
+        height: 80em;
+    }
+    .comunicado h3 {
+        position: absolute;
+        margin-top: 4%;
+        margin-left: 20%;
+    }
+    .ingresaCorreo h3 {
+        position: absolute;
+        margin-top: 13%;
+        margin-left: 20%;
+    }
+    .destinatario input {
+        position: absolute;
+        margin-top: 18%;
+        margin-left: 20%;
+    }
+    .ingresaMensaje h3 {
+        position: absolute;
+        margin-top: -35px;
+        margin-left: -4px;
+    }
+    .ingresaMensaje {
+        position: absolute;
+        margin-top: 32%;
+        margin-left: 20%;
+    }
+    .linkSend {
+        position: absolute;
+        margin-top: 55%;
+        margin-left: 30%;
+    }
+    .footer h4 {
+        margin-left: 28%;
+        margin-right: 5%;
+    }
+    .instagram img {
+        margin-left: 82%;
+        margin-top: -100px;
+        margin-bottom: 30px;
+    }
+    .facebook img {
+        margin-top: -100px;
+        margin-bottom: 48px;
+    }
+}
+
+@media only screen and (max-width: 774px) {
+    /* For tablets: */
+    .textomenu1 {
+        margin-left: 52%;
+    }
+    .textomenu2 {
+        margin-left: 75%;
+    }
+    .contenido {
+        height: 80em;
+    }
+    .comunicado h3 {
+        position: absolute;
+        margin-top: 4%;
+        margin-left: 20%;
+    }
+    .ingresaCorreo h3 {
+        position: absolute;
+        margin-top: 13%;
+        margin-left: 20%;
+    }
+    .destinatario input {
+        position: absolute;
+        margin-top: 18%;
+        margin-left: 20%;
+    }
+    .ingresaMensaje h3 {
+        position: absolute;
+        margin-top: -35px;
+        margin-left: -4px;
+    }
+    .ingresaMensaje {
+        position: absolute;
+        margin-top: 32%;
+        margin-left: 20%;
+    }
+    .linkSend {
+        position: absolute;
+        margin-top: 55%;
+        margin-left: 30%;
+    }
+    .footer h4 {
+        margin-left: 28%;
+        margin-right: 5%;
+    }
+    .instagram img {
+        margin-left: 82%;
+        margin-top: -100px;
+        margin-bottom: 30px;
+    }
+    .facebook img {
+        margin-top: -100px;
+        margin-bottom: 48px;
+    }
+}
+
+@media only screen and (max-width: 360px) {
+    /* For cellphone: */
+    .textomenu1 {
+        margin-left: 63%;
+        font-size: 10pt;
+    }
+    .textomenu2 {
+        display: none;
+    }
+    .header {
+        width: 100%;
+    }
+    .contenido {
+        width: 100%;
+    }
+    .logoJetaime {
+        width: 80%;
+        margin-left: 10%;
+        margin-top: 5em;
+        margin-bottom: 6em;
+    }
+    .rectangulo {
+        background-color: #5E67A6;
+        width: 80%;
+        height: 10em;
+        border-radius: 1em;
+        margin-left: 10%;
+        margin-top: -5em;
+    }
+    .rectangulo h3 {
+        color: #ffffff;
+        font-size: 12pt;
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 1em;
+        text-align: center;
+        padding-top: 2em;
+    }
+    #btn {
+        display: none;
+    }
+    .articule h2 {
+        color: #6466A4;
+        font-family: Arial, Helvetica, sans-serif;
+        text-align: center;
+        font-size: 12pt;
+        margin-left: 3em;
+        margin-right: 3em;
+        margin-top: 2em;
+        margin-bottom: 1em;
+    }
+    #btnEmpieza {
+        display: none;
+    }
+    /*Mensaje Secreto*/
+    /*/Contenido/*/
+    .contenido {
+        height: 30em;
+    }
+    /*/Escribe tu texto para cifrar/*/
+    .mensajeSecreto h3 {
+        position: relative;
+        margin-top: 25%;
+        left: 1%;
+        color: #E3B7BA;
+        font-size: 12pt;
+    }
+    .textoCifrar input {
+        position: relative;
+        margin-top: -20px;
+        left: 1%;
+        width: 70%;
+    }
+    /*/Ingresa número de desplazamientos/*/
+    .desplazamientos h3 {
+        position: relative;
+        left: 9%;
+        font-size: 12pt;
+        color: #E3B7BA;
+    }
+    .numeroDesplazamiento input {
+        position: relative;
+        margin-top: -3px;
+        left: 1%;
+        width: 70%;
+    }
+    /*Boton de CIFRAR*/
+    #btnCifrar {
+        position: relative;
+        margin-top: 20px;
+        left: -2em;
+    }
+    /*Este es tu Decifrar:*/
+    .textoDecifrar h3 {
+        position: relative;
+        left: 5%;
+        font-size: 12pt;
+        color: #E3B7BA;
+    }
+    .textoDecifrar input {
+        position: relative;
+        margin-top: -3px;
+        left: 1%;
+        width: 70%;
+    }
+    /*Boton de DECIFRAR*/
+    #btnDecifrar {
+        position: relative;
+        margin-top: 20px;
+        left: -2em;
+    }
+    /*Mensaje Cifrado o Decifrado*/
+    .resultado {
+        position: relative;
+        left: -2em;
+        color: #E3B7BA;
+    }
+    #mensajeTraducido {
+        color: #ffffff;
+        position: relative;
+        margin-top: 10px;
+        left: -2em;
+    }
+    .celularImg {
+        display: none;
+    }
+    /*Correo*/
+    .comunicado {
+        display: none;
+    }
+    .ingresaCorreo {
+        display: none;
+    }
+    .destinatario {
+        display: none;
+    }
+    .ingresaMensaje {
+        display: none;
+    }
+    .send {
+        display: none;
+    }
+    /*Footer*/
+    .footer h4 {
+        font-size: 8pt;
+        margin-left: 5%;
+    }
+    .instagram img {
+        width: 10%;
+        margin-left: 5%;
+        margin-bottom: -20px;
+    }
+    .facebook img {
+        width: 10%;
+        margin-left: 20%;
+        margin-bottom: -2px;
+    }
+}
+
+
+/*INSTRUCCIONES*/
+
+.instrucciones {
+    width: 100%;
+    padding-top: 0px;
+    height: 50%;
+    background-color: #9BC5C3;
+}
+
+.contenedorInstrucciones {
+    display: flex;
+}
+
+
+/*SLIDE DE IMAGENES*/
+
+.slider {
+    width: 23%;
+    overflow: hidden;
+    margin-left: 10%;
+}
+
+.slider img {
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.slider ul {
+    padding: 0;
+    display: flex;
+    width: 500%;
+    animation: cambio 40s infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in;
+}
+
+.slider li {
+    list-style: none;
+    width: 100%;
+}
+
+.slider img {
+    width: 100%;
+}
+
+@keyframes cambio {
+    0% {
+        margin-left: 0;
+    }
+    16% {
+        margin-left: 0;
+    }
+    20% {
+        margin-left: -100%;
+    }
+    36% {
+        margin-left: -100%;
+    }
+    40% {
+        margin-left: -200%;
+    }
+    56% {
+        margin-left: -200%;
+    }
+    60% {
+        margin-left: -300%;
+    }
+    76% {
+        margin-left: -300%;
+    }
+    80% {
+        margin-left: -400%;
+    }
+    96% {
+        margin-left: -400%;
+    }
+}
+
+.vd video {
+    width: 90%;
+    margin-left: 60%;
+    margin-top: 160px;
+}
+
+
+/*Responsive*/
+
+@media only screen and (max-width: 774px) {
+    /* For tablets: */
+    .contenedorInstrucciones {
+        display: block;
+    }
+    .slider {
+        width: 50%;
+        margin-left: 200px;
+    }
+    .vd video {
+        width: 80%;
+        margin-left: 9%;
+        margin-top: 0;
+        margin-bottom: 10%;
+    }
+}
+
+
+/*Responsive*/
+
+@media only screen and (max-width: 360px) {
+    /* For cellphone: */
+    .contenedorInstrucciones {
+        display: block;
+    }
+    .slider {
+        width: 80%;
+        margin-left: 40px;
+    }
+    .vd video {
+        width: 80%;
+        margin-left: 9%;
+        margin-top: 0px;
+        margin-bottom: 20%;
+    }
+}
