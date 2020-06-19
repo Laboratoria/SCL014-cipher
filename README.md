@@ -57,7 +57,9 @@ La creación de esta webapp, persigue generar ganancias como: público (nuevo y 
  * Envío del mensaje al correo del destinatario. 
  * Además, se agrega la posibilidad de seguir por redes sociales la app.
 
- ![prototipado](imagenes/prototipado.png)
+ ![prototipado](SCL014-cipher\src\imagenes\Prototipado.png)
+
+ ![prototipo](SCL014-cipher\src\imagenes\prototipo.jpeg)
 
 
 ### Pasos seguidos para el diseño de la app
@@ -192,6 +194,8 @@ En el archivo `test/cipher.spec.js`: se encuentran algunos tests implementados p
 
 ## 8. Anexos complementarias
 
+Test para conocer si la función de nuestra aplicación está bien y cumple con los parámetros 
+
 ![test](SCL014-cipher\src\imagenes\test.png)
 
 ### Planificación por Trello
@@ -217,4 +221,4 @@ En el archivo `test/cipher.spec.js`: se encuentran algunos tests implementados p
 
 **Testeo, Prototipo 6** [link](https://xd.adobe.com/view/ca786d38-6ead-4626-43c5-c77634266e12-bc49/?fullscreen&hints=off)
 
-**Link para utilizar app Je´taime** abre y sigue las instrucciones  [link]()
+**Link para utilizar app Je´taime abre y sigue las instrucciones** [link]()
