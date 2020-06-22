@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1592844342743" clover="3.2.0">
-  <project timestamp="1592844342744" name="All files">
-    <metrics statements="22" coveredstatements="20" conditionals="16" coveredconditionals="14" methods="2" coveredmethods="2" elements="40" coveredelements="36" complexity="0" loc="22" ncloc="22" packages="1" files="1" classes="1"/>
+<coverage generated="1592846896923" clover="3.2.0">
+  <project timestamp="1592846896923" name="All files">
+    <metrics statements="20" coveredstatements="19" conditionals="12" coveredconditionals="11" methods="2" coveredmethods="2" elements="34" coveredelements="32" complexity="0" loc="20" ncloc="20" packages="1" files="1" classes="1"/>
     <file name="cipher.js" path="C:\Users\Sandy\OneDrive\Escritorio\laboratoria\proyectos\SCL014-cipher\src\cipher.js">
-      <metrics statements="22" coveredstatements="20" conditionals="16" coveredconditionals="14" methods="2" coveredmethods="2"/>
+      <metrics statements="20" coveredstatements="19" conditionals="12" coveredconditionals="11" methods="2" coveredmethods="2"/>
       <line num="1" count="1" type="stmt"/>
       <line num="4" count="2" type="stmt"/>
       <line num="5" count="2" type="stmt"/>
@@ -22,9 +22,7 @@
       <line num="34" count="6" type="stmt"/>
       <line num="36" count="6" type="cond" truecount="4" falsecount="0"/>
       <line num="37" count="3" type="stmt"/>
-      <line num="39" count="3" type="cond" truecount="3" falsecount="1"/>
-      <line num="40" count="3" type="stmt"/>
-      <line num="43" count="0" type="stmt"/>
+      <line num="43" count="3" type="stmt"/>
       <line num="47" count="2" type="stmt"/>
     </file>
   </project>

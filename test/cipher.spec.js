@@ -32,9 +32,9 @@ describe('cipher', () => {
       //completa este test!
       expect(cipher.decode(-33,"HIJ")).toBe("ABC");
     });
-    test('should return "abcdefghijklmnopqrstuvwxyz" for "hijklmnopqrstuvwxyzabcdefg" with offset 33', () => {
+    test('should return "abcdefghijklmnopqrstuvwxyz" for "hijklmnopqrstuvwxyzabcdefg" with offset -33', () => {
       //completa este test!
-      expect(cipher.decode(33, "hij")).toBe("abc");
+      expect(cipher.decode(-33, "hij")).toBe("abc");
     });
   });
 

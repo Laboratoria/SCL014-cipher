@@ -36,9 +36,9 @@ const cipher = {
       if (asciiCode >= 65 && asciiCode <= 90) { 
         result = result + String.fromCharCode((asciiCode - 65 + finOffNum) % 26 + 65); 
       }
-      else if (asciiCode >= 97 && asciiCode <= 122) {
+      /*else if (asciiCode >= 97 && asciiCode <= 122) {
         result = result + String.fromCharCode((asciiCode - 97 + finOffNum) % 26 + 97);
-      }
+      }*/
       else {
         result = result + txtInt.charAt(i); 
       }
