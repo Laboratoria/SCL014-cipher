@@ -18,8 +18,8 @@
 
 Este proyecto contempla el uso del cifrado César, el cual es un tipo de cifrado por sustitución en el que una letra en el texto original es reemplazada por otra letra que posee un número fijo de posiciones más adelante en el alfabeto. A fin de desarrollar esta técnica con un concepto específico, se estableció el crear una app que permitiese cifrar mensajes de amor, permitiendo el flujo de comunicación entre un emisor y un receptor. En ello se definió un **problema**, tal cual se aprecia en la imagen, asociado a la forma o posibilidad para comunicar el amor entre personas. Ejemplo de ello, cuando no se atreven a expresarse, cuando el mensaje no puede escribirse o cuando los enamorades tienen límites  difíciles de romper. Asimismo, se plantea como **solución**: crear una página web gratuita, dónde a través de un cifrado se puedan enviar mensajes, recibidos en su correo electrónico, haciendo y logrando triunfar el amor. Esta aplicación busca la comunicación efectiva y afectiva entre nuestros usuarios. 
 
-![ux1](SCL014-cipher\src\imagenes\ux1.jpeg)
-![ux2](SCL014-cipher\src\imagenes\ux2.jpeg)
+![ux1](https://raw.githubusercontent.com/Namastheyssoledasbaspe/SCL014-cipher/master/src/imagenes/ux1.jpeg)
+![ux2](src\imagenes\ux2.jpeg)
 
 ## 2. Nombre de la aplicación y Empresa Desarrolladora
 
