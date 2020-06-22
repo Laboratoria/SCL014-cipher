@@ -8,8 +8,11 @@ let fisrtScreen = document.getElementById("firstScreen");
 let secondScreen = document.getElementById("secondScreen");
 let nextBtn = document.getElementById("buttonNext");
 let contactScreen = document.getElementById("contactScreen");
+let newcontactScreenTwo = document.getElementById("newcontactScreenTwo");
 let newcontactScreen = document.getElementById("newcontactScreen");
 let contactList = document.getElementById("contactLog");
+let addBackTwo = document.getElementById("addContactNewTwo");
+let addBack = document.getElementById("addContactTwo");
 let botonListo = document.getElementById("buttonListo");
 let goBackMsg = document.getElementById("goBack");
 let msgSent = document.getElementById("msgSent");
@@ -20,6 +23,8 @@ let exitBtn = document.getElementById("btnClose");
 let instructionsBtn = document.getElementById("btnInstructions");
 let clearContent = document.getElementById("clearContent");
 let fakeCalendar= document.getElementById("fakeCalendar");
+let addNewCnt = document.getElementById("addContact");
+
 
 
 // Funcion de limpiar la consola 
@@ -70,6 +75,24 @@ botonListo.addEventListener("click", function () {
   msgSent.className = "welcomeTo";
 });
 
+//Añadir contacto 
+addNewCnt.addEventListener("click", function (){
+  contactScreen.className ="hideMe";
+  newcontactScreenTwo.className = "welcomeTo";
+});
+
+//nueva pantalla de contactos volver atras
+addBack.addEventListener("click", function(){
+  newcontactScreenTwo.className = "hideMe";
+  secondScreen.className = "welcomeTo";
+});
+
+// pantalla de volver atras en contactos
+addBackTwo.addEventListener("click", function(){
+  newcontactScreenTwo.className = "hideMe";
+  secondScreen.className = "welcomeTo";
+});
+
 //Pantalla de los contactos agregados
 contactList.addEventListener("click", function () {
   secondScreen.className = "hideMe";
@@ -99,6 +122,12 @@ exitBtn.addEventListener("click", function () {
 });
 
 //Volver a la pantalla de mensajes
+backToMsg.addEventListener("click", function () {
+  fakeCalendar.className = "hideMe";
+  secondScreen.className = "welcomeTo";
+});
+
+//Volver a la pantalla de mensajes
 returnMsgPage.addEventListener("click", function () {
   msgSent.className = "hideMe";
   secondScreen.className = "welcomeTo";
@@ -110,9 +139,4 @@ fakeCal.addEventListener("click", function () {
   fakeCalendar.className = "welcomeTo";
 });
 
-//Volver a la pantalla de mensajes
-backToMsg.addEventListener("click", function () {
-  fakeCalendar.className = "hideMe";
-  secondScreen.className = "welcomeTo";
-});
 

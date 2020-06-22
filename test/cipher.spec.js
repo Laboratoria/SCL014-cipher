@@ -15,9 +15,11 @@ describe('cipher', () => {
 
     test('should return "HIJKLMNOPQRSTUVWXYZABCDEFG" for "ABCDEFGHIJKLMNOPQRSTUVWXYZ" with offset 33', () => {
       //completa este test!
-      expect( cipher.encode(33, "ABCDEFGHIJKLMNOPQRSTUVWXYZ") ).toBe("HIJKLMNOPQRSTUVWXYZABCDEFG");
+      expect( cipher.encode(33 ,"ABC") ).toBe("HIJ");
     });
-
+    test('should return "hijklmnopqrstuvwxyzabcdefg" for "abcdefghijklmnopqrstuvwxyz" with offset 33', () => {
+      //completa este test!
+      expect( cipher.encode(33,"abc") ).toBe("hij");
   });
 
   describe('cipher.decode', () => {
@@ -26,11 +28,16 @@ describe('cipher', () => {
       expect(typeof cipher.decode).toBe('function');
     });
 
-    test('should return "ABCDEFGHIJKLMNOPQRSTUVWXYZ" for "HIJKLMNOPQRSTUVWXYZABCDEFG" with offset 33', () => {
+    test('should return "ABCDEFGHIJKLMNOPQRSTUVWXYZ" for "HIJKLMNOPQRSTUVWXYZABCDEFG" with offset -33', () => {
       //completa este test!
-      expect(cipher.decode( -33,"HIJKLMNOPQRSTUVWXYZABCDEFG")).toBe("ABCDEFGHIJKLMNOPQRSTUVWXYZ");
+      expect(cipher.decode(-33,"HIJ")).toBe("ABC");
     });
-    
+    test('should return "abcdefghijklmnopqrstuvwxyz" for "hijklmnopqrstuvwxyzabcdefg" with offset 33', () => {
+      //completa este test!
+      expect(cipher.decode(33, "hij")).toBe("abc");
+    });
   });
+
+});
 
 });
