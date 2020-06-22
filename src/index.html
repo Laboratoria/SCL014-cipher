@@ -1,14 +1,116 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Caesar Cipher</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <div id="root">
-      <h1>Hello world!</h1>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Je´Taime App</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="shortcut icon" type="image/x-icon" href="imagenes/pavicon.png">
+</head>
+
+<body>
+    <div class="menu">
+        <img class="logomenu" src="imagenes/logomenu.png" alt="">
+        <div class="textomenu1">
+            <a href="instrucciones.html">INSTRUCCIONES</a>
+        </div>
+        <div class="textomenu2">
+            <a href="#section4">REDES SOCIALES</a>
+        </div>
     </div>
-    <script src="index.js" type="module"></script>
-  </body>
+    <div id="contenedor">
+        <div class="header">
+            <img class="logoJetaime" src="imagenes/logo.png" alt="">
+            <img class="imagenPareja" src="imagenes/imagenpareja.png" alt="">
+            <div class="rectangulo">
+                <h3>El amor no representa fronteras, ni barreras. Envía a ese ser especial de tu vida, un mensaje cifrado, incógnito y secreto para demostrar tus más profundos sentimientos y emociones.</h3>
+                <button id="btn">
+                    <a href="#section2">¡CONÓCEMOS MÁS!</a>
+                </button>
+            </div>
+        </div>
+
+        <div class="articule" id="section2">
+            <h2>Je´taime, es una app que nace desde la búsqueda de las parejas para encontrarse entre si y nosotros queremos ser el puente que los conecte. Es por eso que la empresa <i>Group Les Affeaires</i> los invita a vivir esta experiencia de mensajes
+                secretos para tener conversaciones únicas y entretenidas.
+            </h2>
+            <button id="btnEmpieza">
+                <a href="#section3">¡EMPIEZA YA!</a>
+            </button>
+
+        </div>
+
+    </div>
+    <div class="contenido" id="section3">
+        <div class="contenedorCodigo">
+            <img class="celularImg" src="imagenes/celular.png" alt="">
+            <div class="mensajeSecreto">
+                <h3>Escribe tu texto a cifrar:</h3>
+            </div>
+            <div class="textoCifrar">
+                <input type="text" id="msg1" placeholder="Ej: Amor">
+            </div>
+            <div class="desplazamientos">
+                <h3>Número de desplazamientos:</h3>
+            </div>
+            <div class="numeroDesplazamiento">
+                <input type="number" id="num" class="offset" placeholder="Ej: 2">
+            </div>
+            <button id="btnCifrar">Cifrar</button>
+            <div class="textoDecifrar">
+                <h3>Escribe tu texto a decifrar:</h3>
+            </div>
+            <div class="textoDecifrar">
+                <input type="text" id="msg2" placeholder="Ej: COQT">
+            </div>
+            <button id="btnDecifrar"> Decifrar </button>
+            <div class="resultado">
+                <h3>Tu Resultado:</h3>
+            </div>
+            <p id="mensajeTraducido"></p>
+        </div>
+        <form action="datos" method="GET">
+            <div class="comunicado">
+                <h3>Si deseas enviar tu mensaje secreto a esa persona especial, ¡Enviale un mail!</h3>
+            </div>
+            <div class="ingresaCorreo">
+                <h3>Ingresa el correo de tu enamorade:</h3>
+            </div>
+            <div class="destinatario">
+                <input type="email" placeholder="Escribe correo del destinatario" id="destinatario">
+            </div>
+            <div class="ingresaMensaje">
+                <h3>Escribe tu mensaje a enviar:</h3>
+                <textarea name="" id="mensaje" cols="65" rows="10"></textarea>
+            </div>
+            <div class="send">
+                <a href="" id="email" class="linkSend" onclick="sendEmail()">
+                        Enviar
+                    </a>
+                <script>
+                    function sendEmail() {
+                        let destinatario = document.getElementById("destinatario").value;
+                        let mensaje = document.getElementById("mensaje").value;
+                        window.location.href = "mailto:" + destinatario + "?body=" + mensaje;
+                    }
+                </script>
+            </div>
+        </form>
+    </div>
+    <div class="footer" id="section4">
+        <h4>Aplicación creada por empresa <span style="color: #6466A4;">Group Les affaires</span> y desarrolladoras Namastheys e Iara</h4>
+        <div class="instagram">
+            <a href="https://www.instagram.com/jetaime.app/?hl=es-la"> <img src="imagenes/instagram.png"></a>
+        </div>
+        <div class="facebook">
+            <a href="https://www.facebook.com/Jetaime-App-106893921064754/?modal=admin_todo_tour"> <img src="imagenes/facebook.png"></a>
+        </div>
+    </div>
+
+
+
+    <script src="index.js" type="module"> </script>
+</body>
+
 </html>
