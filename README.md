@@ -207,7 +207,7 @@ Test para conocer si la función de nuestra aplicación está bien y cumple con 
   
 ![testeo1](https://raw.githubusercontent.com/Namastheyssoledasbaspe/SCL014-cipher/master/src/imagenes/testeo2.jpg)  
 ![testeo2](https://raw.githubusercontent.com/Namastheyssoledasbaspe/SCL014-cipher/master/src/imagenes/testeo3.jpg)
-![testeo3](SCL014-cipher\src\imagenes\testeo4.jpg)
+![testeo3](https://github.com/iaraCarrillo/SCL014-cipher/raw/master/SCL014-cipher%5Csrc%5Cimagenes%5Ctesteo4.jpg)
 ![testeo4](https://raw.githubusercontent.com/Namastheyssoledasbaspe/SCL014-cipher/master/src/imagenes/testeo5.jpeg)      
 
 ### 9. Aplicación y redes sociales
