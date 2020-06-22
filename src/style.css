@@ -1,29 +1,28 @@
-form {
-    margin: 0 auto;
-    width: 400px;
-    padding: 1em;
-    border: 1px solid #ccc;
-    border-radius: 1em;
-    background: linear-gradient(90deg,#e9daeb 10%,#72b6b0 90%)
-}
 body {
   background: rgb(36, 36, 36);  
 } 
 
 h1 {
   font-family: "Roboto", sans-serif;
-  font-style: normal;
+  font-style: italic;
   font-weight: bold;
-  color: #404281;
 }
 
 h2 {
   font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: bold;
-  color: #404281;
+  color: #e65151;
 }
 
+h3 {
+  font-family: "Roboto", sans-serif;
+  font-style: italic;
+  color: white;
+}
+/* <-------------------------------------------añadir @querys ------------------------------------------------>*/
+
+/*Pantalla base*/
 .welcomeTo {
   text-align: center;
   width: 22em;
@@ -33,38 +32,32 @@ h2 {
   margin-bottom: 8em;
   margin-right: 30em;
   margin-left: 30em;
-  /*background-color: #D4CED1;*/
-  background: linear-gradient(to bottom, rgb(53, 29, 48) 0%, rgb(241, 92, 216) 43%, rgb(246, 12, 207) 51%, rgb(240, 23, 193) 71%, rgb(240, 59, 165) 100%);
-}
-
-.whiteLetter {
-  font-family: "Roboto", sans-serif;
-  color: #FFFFFF;
-  font-style: normal;
-  font-size: 1.5em;
-}
-
-.grayLetter {
-  font-family: "Roboto", sans-serif;
-  color: rgb(99, 96, 96);
-  font-style: normal;
-  font-size: 1.3em;
 } 
 
+.pinkLetter {
+  font-family: "Roboto", sans-serif;
+  color: #92667a;
+  font-style: normal;
+  font-size: 1em;
+}
+
+/* Campo donde se ingresa nombre de usuario y teléfono*/  
 .textContainer {
   position: center;
-  width: 15em;
+  width: 10em;
   height: 2.5em;
-  background: #FFFDFD;
+  background: #f5cece;
   border-radius: 20px;
-  margin: 1em;
+  margin: .5em;
   border: none; 
   text-align: center;
   font-size: medium; 
   font-style: italic;  
+  resize: none;
 }
 
-.enterBtn {
+/*Botón para entrar a la App*/
+.enterBtn { 
   font-family: "Roboto", sans-serif;
   font-weight: bold;
   text-align: center;
@@ -72,14 +65,16 @@ h2 {
   line-height: 0.2em;
   margin: 3em;
   padding: 1em;
-  width: 8em;
+  width: 6em;
   height: 2.5em;
-  background: #FAC43B;
+  background: #d63434;
   border: none;
   border-radius: 30px;
   cursor: pointer;
+  color: #dad5ce;
 }
 
+/*boton pequeño*/
 .listoBtn {
   font-family: "Roboto", sans-serif;
   font-weight: bold;
@@ -90,10 +85,11 @@ h2 {
   padding: 1em;
   width: 5em;
   height: 2.5em;
-  background: #FAC43B;
+  background: #d63434;
   border: none;
   border-radius: 30px;
   cursor: pointer;
+  color:white;
 }
 
 .hideMe {
@@ -104,7 +100,7 @@ h2 {
   position: center;
   width: 15em;
   height: 2.5em;
-  background: #B3C5C7;
+  background: #FFCCCB;
   border-radius: 5px;
   margin: 1em;
   border: none;
@@ -125,6 +121,7 @@ margin-left: 30em;
 background-color: #D4CED1;
 }
 
+/* Contactos guardados*/ 
 .saveContact{
   position: center;
   width: 10em;
@@ -133,39 +130,197 @@ background-color: #D4CED1;
   margin-top: 4em;
   margin-bottom: 5em;
   margin-right: 10em;
-  margin-left: 7em;
+  margin-left: 6em;
+  border-radius: 7%;
   border: none;
   text-align: center;
   font-size: medium;
+  background-color: #f7d2d2;
 }
 
-.addBtn {
+/* Botón de Cifrar y Descifrar */
+  .btnTranslate { 
+  box-shadow: 3px 4px 0px 0px #899599;
+  background-color:#969ece;
+  border-radius: 15px;
+  border: 1px solid #e89ccd;
+  display: inline-block;
+  cursor: pointer;
+  color:#ffffff;
+  font-family: "Roboto", sans-serif;
+  font-size: 17px;
+  padding: 8px 15px;
+  text-decoration: none;
+}
+  .btnTranslate:hover {
+background-color:#f53f73;
+}
+
+/* Botón del copiado de texto en el portapapeles */
+.copyText{
+margin-right: -7em;
+margin-left: 4em;
+}
+
+/*Botón para enviar el mensaje*/ 
+.sendMsg {
   font-family: "Roboto", sans-serif;
   font-weight: bold;
+  font-size: larger;
   text-align: center;
-  font-size: 1em;
+  color: whitesmoke;
   line-height: 0.2em;
-  margin: 1em;
+  margin-top: 3em;
   padding: 1em;
-  width: 5em;
+  width: 15em;
   height: 2.5em;
-  background: #FAC43B;
+  background: #d63434;
   border: none;
   border-radius: 30px;
   cursor: pointer;
 }
-
-.neeeext{
-  margin-top: 5em;
+.sendMsg:hover {
+  background-color: tomato;
+  color: black;
 }
 
-.offsetForm {
-  font-family: "Roboto", sans-serif;
-  background-color: #FAC43B;
-}
-
-.smallLetter {
+/* Letras del offset*/
+.smallLetter { /* letritas del offset*/
   font-family: "Roboto", sans-serif;
   font-size: smaller;
-  color: rgb(99, 96, 96);
+  color: #f08080;
+}
+
+/* Área donde se ingresa el texto*/ 
+.textBoxOne {
+    resize: none;
+    background-color: #fbecec;
+    margin-bottom: 1em;
+}
+
+/* Área donde se muestra el resultado del mensaje*/
+.textBoxTwo {
+  resize: none;
+  background-color: #fbecec;
+  border-style: double;
+  border-color: thistle;
+  margin-top: 1em;
+}
+
+/* Númeno de desplazamientos*/
+.btnOffset {
+  width: 3em;
+  height: 2em;
+  background-color: #EDDEAF;
+  margin-left: 1em;
+  margin-right: 1em;
+}
+
+/*Botón Instrucciones*/
+.instructionBtn {
+background-color: #e87272;
+color: white;
+padding: 1em;
+border: none;
+cursor: pointer;
+opacity: 0.8;
+width: 8em;
+height: 3em;
+margin-right: -23em;
+margin-left: 8em;
+text-align: center;
+font-size: x-small;
+border-radius: 56%;
+}
+
+/*instrucciones*/
+.listInstrucciones{
+  color: #e87272;
+  position: absolute;
+  margin:2px;
+  /*margin-left: -1em;*/
+  width: 300px;
+  padding: 10px;
+  font-size: small;
+}
+
+
+/*Ventana Instrucciones*/
+.instructionsPopup {
+display: none;
+position: fixed;
+margin-bottom: 2em;
+margin-right: 1em;
+margin-left: 1em;
+margin-top: -2em;
+border: .5em solid #f08080;
+height: 32em;
+width: 19.5em;
+background-color: #f5cece;
+}
+
+/*Botón cerrar*/
+.btnExit {
+background-color: #f08080;
+margin-right: -18em;
+margin-top: 1em;
+}
+.btnExit:hover {
+background-color: tomato;
+color: white;
+}
+
+/* Icono calendario*/
+.calendar {
+margin-right: 1em;
+margin-left: -16em;
+}
+
+/* Icono contactos*/
+.contactLogo {
+margin-right: 1em;
+}
+
+/* Icono borrar mensaje*/
+.erase{
+margin-top: 0em;
+margin-left: -7em;
+}
+
+/* Icono copiar mensaje*/
+.copyText{
+margin-right: -7em;
+margin-left: 4em;
+}
+
+/*Mensaje final*/
+.finalText {
+font-family: "Roboto", sans-serif;
+font-weight: bold;
+font-size: medium;
+color: #f3f3f3;
+background-color: #e77e7e;
+width: 16em;
+height: 5em;
+line-height: 1em;
+margin: 3em;
+border-radius: 5%;
+text-align: center;
+;
+}
+
+.backBtn {
+font-family: "Roboto", sans-serif;
+text-align: center;
+font-size: x-small;
+line-height: 0.2em;
+margin-right: 25em;
+padding: 1em;
+width: 5em;
+height: 2em;
+background:white;
+border: none;
+border-radius: 30px;
+cursor: pointer;
+color: #d63434;
 }
