@@ -7,17 +7,19 @@ let enter = document.getElementById("buttonEnter");
 let fisrtScreen = document.getElementById("firstScreen");
 let secondScreen = document.getElementById("secondScreen");
 let nextBtn = document.getElementById("buttonNext");
+let contactScreen = document.getElementById("contactScreen");
 let newcontactScreen = document.getElementById("newcontactScreen");
 let contactList = document.getElementById("contactLog");
 let botonListo = document.getElementById("buttonListo");
 let goBackMsg = document.getElementById("goBack");
-let finalScreen = document.getElementById("msgSent");
+let msgSent = document.getElementById("msgSent");
 let returnMsgPage = document.getElementById("buttonLast");
 let fakeCal = document.getElementById("calendarLog");
 let backToMsg = document.getElementById("goBackTwo");
 let exitBtn = document.getElementById("btnClose");
 let instructionsBtn = document.getElementById("btnInstructions");
 let clearContent = document.getElementById("clearContent");
+let fakeCalendar= document.getElementById("fakeCalendar");
 
 
 // Funcion de limpiar la consola 
@@ -65,7 +67,7 @@ nextBtn.addEventListener("click", function () {
 //Botón para agregar nuevo contacto
 botonListo.addEventListener("click", function () {
   newcontactScreen.className = "hideMe";
-  finalScreen.className = "welcomeTo";
+  msgSent.className = "welcomeTo";
 });
 
 //Pantalla de los contactos agregados
