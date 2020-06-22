@@ -43,6 +43,7 @@ h3 {
     font-style: italic;
     color: white;
   }
+  
 }
 
 @media (max-width: 1024px) and (min-width: 640px) {
@@ -66,6 +67,7 @@ h3 {
     font-style: italic;
     color: white;
   }
+  
 }
 
 @media (min-width: 1024px) {

@@ -3,27 +3,29 @@ import cipher from './cipher.js';
 //console.log(cipher.encode(), cipher.decode());
 
 // <----- separación de las variables del cipher---------> 
-
-let enter = document.getElementById("buttonEnter"); 
+let enter = document.getElementById("buttonEnter");
 let fisrtScreen = document.getElementById("firstScreen");
+let secondScreen = document.getElementById("secondScreen");
 let nextBtn = document.getElementById("buttonNext");
+let newcontactScreen = document.getElementById("newcontactScreen");
 let contactList = document.getElementById("contactLog");
 let botonListo = document.getElementById("buttonListo");
-let finalScreen = document.getElementById("msgSent");
 let goBackMsg = document.getElementById("goBack");
+let finalScreen = document.getElementById("msgSent");
+let returnMsgPage = document.getElementById("buttonLast");
+let fakeCal = document.getElementById("calendarLog");
+let backToMsg = document.getElementById("goBackTwo");
 let exitBtn = document.getElementById("btnClose");
 let instructionsBtn = document.getElementById("btnInstructions");
 let clearContent = document.getElementById("clearContent");
 
-// Funcion de limpiar la consola
 
-  clearContent.addEventListener("click" , function (){
-    document.getElementById("originalText").value = " ";
-    document.getElementById("textoCifrado").innerHTML= " ";
-    
-  });
-  
+// Funcion de limpiar la consola 
+clearContent.addEventListener("click", function () {
+  document.getElementById("originalText").value = " ";
+  document.getElementById("textoCifrado").innerHTML = " ";
 
+});
 
 // funcion de cifrar
 document.getElementById("cifrarTexto").addEventListener('click', () => {
@@ -95,21 +97,18 @@ exitBtn.addEventListener("click", function () {
 });
 
 //Volver a la pantalla de mensajes
-let returnMsgPage = document.getElementById("buttonLast");
 returnMsgPage.addEventListener("click", function () {
   msgSent.className = "hideMe";
   secondScreen.className = "welcomeTo";
 });
 
 //Abrir el calendario falso
-let fakeCal = document.getElementById("calendarLog");
 fakeCal.addEventListener("click", function () {
   secondScreen.className = "hideMe";
   fakeCalendar.className = "welcomeTo";
 });
 
 //Volver a la pantalla de mensajes
-let backToMsg = document.getElementById("goBackTwo");
 backToMsg.addEventListener("click", function () {
   fakeCalendar.className = "hideMe";
   secondScreen.className = "welcomeTo";
