@@ -8,9 +8,8 @@ import cipher from './cipher.js';
 
     // <----- separación de las variables del cipher---------> 
 
-    let enter = document.getElementById("buttonEnter");
+    let enter = document.getElementById("buttonEnter"); // boton de inicio Entrar
     let fisrtScreen = document.getElementById("firstScreen");
-    let secondScreen = document.getElementById("secondScreen");
     let nextBtn = document.getElementById("buttonNext");
     let newcontactScreen = document.getElementById("newcontactScreen");
     let contactList = document.getElementById("contactLog");
@@ -25,7 +24,6 @@ import cipher from './cipher.js';
     document.getElementById("cifrarTexto").addEventListener('click', () =>{
       let offNum = document.getElementById("desplazamiento").value;
       let txtInt = document.getElementById("originalText").value;
-
       document.getElementById("textoCifrado").innerHTML = cipher.encode(offNum,txtInt);
     });
     
@@ -86,6 +84,7 @@ let instructionsBtn = document.getElementById("btnInstructions");
 instructionsBtn.addEventListener("click", function(){
   document.getElementById("instructions").style.display = "block";
 });
+
 //Botón para cerrar las instrucciones
 let exitBtn = document.getElementById("btnClose");
 exitBtn.addEventListener("click", function(){
