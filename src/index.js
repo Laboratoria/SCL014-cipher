@@ -19,7 +19,7 @@ let clearContent = document.getElementById("clearContent");
 
   clearContent.addEventListener("click" , function (){
     document.getElementById("originalText").value = " ";
-    document.getElementById("textoCifrado").value = " ";
+    document.getElementById("textoCifrado").innerHTML= " ";
     
   });
   
